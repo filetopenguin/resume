@@ -1,0 +1,138 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header section */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* About Me section */
+#about {
+    background-color: #fff;
+    padding: 3rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Skills section */
+#skills {
+    background-color: #f9f9f9;
+    padding: 3rem;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#skills ul li {
+    background-color: #e7e7e7;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+#skills li:hover {
+    box-shadow: 0 0 15px rgba(60, 64, 60, 0.8);
+
+}
+/* Contact section */
+#contact {
+    background-color: #fff;
+    padding: 3rem;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+
+    #about p {
+        padding: 0 1rem;
+    }
+}
