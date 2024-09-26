@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -9,12 +9,18 @@ body {
     color: #333;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header section */
 header {
+    background: linear-gradient(135deg, #4CAF50, #81C784);
     background-color: #4CAF50;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 2rem 0;
+    animation: fadeIn 1s ease-in-out;
 }
 
 header h1 {
@@ -27,12 +33,34 @@ header p {
     font-style: italic;
 }
 
+#dark-btn{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#dark-btn:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Dark mode button style */
+.dark-mode #dark-btn {
+    background-color: #f1c40f; 
+    color: black;
+}
 /* About Me section */
 #about {
     background-color: #fff;
     padding: 3rem;
     text-align: center;
     border-bottom: 1px solid #ddd;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #about h2 {
@@ -51,6 +79,7 @@ header p {
     background-color: #f9f9f9;
     padding: 3rem;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #skills h2 {
@@ -84,6 +113,7 @@ header p {
     background-color: #fff;
     padding: 3rem;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #contact h2 {
@@ -135,4 +165,47 @@ footer p {
     #about p {
         padding: 0 1rem;
     }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+<!---darkmode---->
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode header {
+    background: linear-gradient(135deg, #111211, #3a3d3a);
+
+    background-color: #555;
+    color: white; 
+}
+
+.dark-mode #skills ul li {
+    background-color: #777;
+    color: white;
+}
+.dark-mode #skills{
+    background: linear-gradient(135deg, #111211, #3a3d3a);
+    color: white;
+}
+.dark-mode #skills li:hover {
+    box-shadow: 0 0 15px rgba(197, 203, 197, 0.904);
+
+}
+.dark-mode #about {
+    background-color: #777;
+    color: white;
+}
+.dark-mode #contact {
+    background-color: #777;
+    color: white;
 }
